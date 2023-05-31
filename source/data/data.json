@@ -1,6 +1,12 @@
 {
     "data": {
-        "encrypt": "Type something here to encrypt!",
-        "decrypt":"paste something here to decrypt"
+        "encrypt":{
+            "value": "",
+            "placeholder": "Type something here to encrypt!"
+        },
+        "decrypt":{
+            "value": "",
+            "placeholder": "Paste something here to decrypt!"
+        } 
     }
 }

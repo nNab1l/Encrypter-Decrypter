@@ -1,9 +1,13 @@
 class Encrypter{
 
     encrypt(stringToEncrypt){
+        //de strings worden naar hoofdletters omgezet
         stringToEncrypt = stringToEncrypt.toUpperCase();
+        //initieel is de decrypted string leeg
         let encryptedString = [];
+        //for loop
         for(let i = 0; i < stringToEncrypt.length; i++){
+            //switch die de stapgroottes bepaalt
             switch(stringToEncrypt[i]){
                 case "A":
                     encryptedString.push("D");
@@ -88,7 +92,8 @@ class Encrypter{
                     break;
             }
         }
+        //array wordt naar string gereturned door middel van join
         encryptedString = encryptedString.join("");
-        console.log(encryptedString);
+        return encryptedString;
     }
 }

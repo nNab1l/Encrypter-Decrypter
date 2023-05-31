@@ -2,9 +2,13 @@ class Decrypter{
   
 
     decrypt(stringToDecrypt){
+        //de strings worden naar hoofdletters omgezet
         stringToDecrypt = stringToDecrypt.toUpperCase();
+        //initieel is de decrypted string leeg
         let decryptedString = [];
+        //for loop
         for(let i = 0; i < stringToDecrypt.length; i++){
+            //switch die de stapgroottes bepaalt
             switch(stringToDecrypt[i]){
                 case "D":
                     decryptedString.push("A");
@@ -88,7 +92,8 @@ class Decrypter{
                     decryptedString.push(stringToDecrypt[i]);
             }
         }
+        //array wordt naar string gereturned door middel van join
         decryptedString = decryptedString.join("");
-        console.log(decryptedString);
+        return decryptedString;
     }
 }
